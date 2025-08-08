@@ -1,5 +1,5 @@
 # AI-Powered Business Intelligence Chat System
-## Project Plan for Audacy BI Transformation
+## Project Plan for acme corporation BI Transformation
 
 **Project Lead:** Director of BI  
 **Objective:** Transform traditional dashboard delivery to AI-powered conversational analytics  
@@ -89,7 +89,7 @@ class SQLAgent:
         schema_info = self._format_schema_for_prompt()
         
         system_prompt = f"""
-        You are an expert SQL generator for Audacy's business intelligence system.
+        You are an expert SQL generator for acme corporation's business intelligence system.
         
         Available databases and schemas:
         {schema_info}
@@ -102,7 +102,7 @@ class SQLAgent:
         5. Return response in JSON format with: database, sql, explanation, expected_columns
         
         Business Context:
-        - Audacy is a radio/audio media company
+        - acme corporation is a radio/audio media company
         - Common metrics: audience, revenue, ratings, inventory
         - Always consider date ranges for time-series data
         """
@@ -492,7 +492,7 @@ const ChatInterface = () => {
   return (
     <div className="flex flex-col h-screen max-w-6xl mx-auto">
       <header className="bg-blue-600 text-white p-4">
-        <h1 className="text-xl font-bold">Audacy AI Analytics</h1>
+        <h1 className="text-xl font-bold">acme corporation AI Analytics</h1>
         <p className="text-blue-100">Ask any business question in natural language</p>
       </header>
       
@@ -558,7 +558,7 @@ from pydantic import BaseModel
 import json
 from typing import Optional, Dict
 
-app = FastAPI(title="Audacy AI Analytics API")
+app = FastAPI(title="acme corporation AI Analytics API")
 security = HTTPBearer()
 
 class QueryRequest(BaseModel):
